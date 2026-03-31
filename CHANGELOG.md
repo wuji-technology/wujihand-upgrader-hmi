@@ -9,41 +9,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.1.1] - 2026-02-02
 
-### Added
+### Improved
 
-- Add GitHub Actions CI/CD workflow for automated build and release
-
-### Changed
-
-- Upgrade wujihand-upgrader-core dependency to v1.1.1
+- Improved upgrade reliability with updated core components
 
 ## [4.1.0] - 2026-01-12
 
 ### Added
 
-- Add post-upgrade guidance prompt on completion screen (close program, power cycle device)
+- Added post-upgrade guidance prompt on completion screen (close program, power cycle device)
 
 ### Fixed
 
-- Display full release notes on OTA home page instead of collapsed view
+- Fixed release notes display on home page to show full content instead of collapsed view
 
 ## [4.0.0] - 2025-12-31
 
 ### Added
 
-- Enhance device connection logging
+- Enhanced device connection logging
 
 ### Changed
 
-- Rename binary from wujihand-ota to wujihand-upgrader
-- Rename organization from Wuji-Technology-Co-Ltd to wuji-technology
+- Renamed application from wujihand-ota to wujihand-upgrader
+
+### Added
+
+- Added internationalization support for error messages
 
 ### Fixed
 
-- Fix device update check issues and React key warnings
-- Fix firmware version extraction logic
-- Replace hardcoded Chinese error messages with i18n internationalization
-- Comprehensive improvements to firmware version handling and error display
+- Fixed device update check issues
+- Fixed firmware version display
 
 [Unreleased]: https://github.com/wuji-technology/wujihand-upgrader/compare/v4.1.1...HEAD
 [4.1.1]: https://github.com/wuji-technology/wujihand-upgrader/compare/v4.1.0...v4.1.1
