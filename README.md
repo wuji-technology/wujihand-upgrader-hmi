@@ -3,17 +3,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/wuji-technology/wujihand-upgrader)](https://github.com/wuji-technology/wujihand-upgrader/releases)
 
-Wuji Hand Upgrader: firmware upgrade tool for Wuji Hand.
+Wuji Hand Upgrader is the official firmware upgrade tool for Wuji Hand. It provides a guided workflow to flash firmware over USB with automatic bootloader detection. Available as a Debian package with one-click desktop launch.
 
-## Table of Contents
+**Get started with [Quick Start](#quick-start). For detailed documentation, refer to [Wuji Hand Upgrader User Guide](https://docs.wuji.tech/docs/en/wuji-hand/latest/wuji-hand-upgrader-user-guide/) on Wuji Docs Center.**
 
-- [Usage](#usage)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running](#running)
-- [Contact](#contact)
-
-## Usage
+## Quick Start
 
 ### Prerequisites
 
@@ -22,36 +16,10 @@ Wuji Hand Upgrader: firmware upgrade tool for Wuji Hand.
 
 ### Installation
 
-#### Debian Package (.deb)
-
-Debian packages provide system-level installation with automatic permission configuration.
-
-#### Download
-
-Download the latest .deb package:
-- GitHub Releases: [https://github.com/wuji-technology/wujihand-upgrader/releases](https://github.com/wuji-technology/wujihand-upgrader/releases)
-
-#### Install
-
-Install the application using apt. Replace `<downloaded-package-name>` with the actual package name.
+Download the latest `.deb` package from [GitHub Releases](https://github.com/wuji-technology/wujihand-upgrader/releases), then install:
 
 ```bash
-sudo apt install ./<downloaded-package-name>.deb
-# If dependency issues occur
-sudo apt-get install -f
-```
-
-#### Permission Configuration
-
-After installation, the system will automatically:
-- Configure serial port access permissions
-- Add user to required groups
-- Set up hardware access permissions
-
-#### Uninstall
-
-```bash
-sudo apt remove wujihand-upgrader
+sudo apt install ./<package-name>.deb
 ```
 
 ### Running
@@ -59,17 +27,6 @@ sudo apt remove wujihand-upgrader
 Click the "WUJI" app icon on your desktop.
 
 **Note**: First run may take longer to extract and initialize the application.
-
-#### Upgrade Procedure
-
-Firmware upgrade requires the following sequence:
-
-1. Ensure the hand is **powered off**, then open Wuji Hand Upgrader application
-2. Connect the hand to PC via USB, then power on the hand
-3. The application will auto-connect to the bootloader
-4. Proceed with firmware upgrade
-
-**Note**: If the application shows "not in bootloader mode", power cycle the hand and retry.
 
 ## Contact
 
